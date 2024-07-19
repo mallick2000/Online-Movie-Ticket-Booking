@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title> Online Movie Ticket Booking Project</title>
+    <style>
+      body{
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <p>Visit our website:</p>
+  <body>
+    <!--==============-  -->
+    <nav class="navbar">
+      <img src="./pvr.png" class="brand-logo" alt="" />
+      <ul class="active">
+        <li button="nav-items"><a href="./deadpool trailer.mp4">Trailer</a></li>
+        <li button="nav-items"><a href="./Animal-first-look.jpg">Bollywood</a></li>
+        <li button="nav-items"><a href="./hollywood.jpeg">Hollywood</a></li>
+        <li button="nav-items"><a href="./leo.webp">South moive</a></li>
+        <li button="nav-items"><a href="./malyagiri.jpg">Ollywood</a></li>
+      </ul>
+
+      <div class="right-container">
+        <input type="text" class="search-box" placeholder="Search for your city" />
+        <!-- <button class="sub-btn">subscribe</button> -->
+        <button><a href="./Sign in.html" class="signup-link">signup</a></button>
+        <button><a href="./login.html" class="login-link">login</a></button>
+      </div>
+    </nav>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- <div class="slider">
+                <div class="slide-content">
+                    
+              
+                </div>
+                 <img src="./slider 1.png" alt="">
+            </div> -->
+      </div>
+    </div>
+
+    <!-- -==========================- -->
+    <h2> Select a movie</h2>
+    <form action="">
+      
+      <p> Select a movie Name:</p>
+      <select name="moive_name" id="movie">
+        <option value="220">raya and the last dragon (RS.220)</option>
+        <option value="320">wanda vision (RS.320)</option>
+        <option value="250">falcon and the winter soldier (RS.250)</option>
+        <option value="260">luca (RS.260)</option>
+        <option value="100">Malyagiri (RS.100)</option>
+      </select>
+    
+<!--  -->
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+  </form>
+    <script src="script.js"></script>
+
+    
+    <section class="payment">
+    <h2>Payment Information</h2>
+    <label>Card Type:
+       <select name="card_type" id="card_type">
+           <option value="">--Select a card type--</option>
+           <option value="Visa">Visa</option>
+           <option value="Rupay">Rupay</option>
+           <option value="mastercard">mastercard</option>
+        </select>
+    </label>
+    <p>
+        Card Number <input type="number" name="card_number" id="card_number">
+    </p>
+    <p>
+        Expiration Date: <input type="date" name="exp-date" id="exp_date">
+    </p>
+    <p>
+        cvv <input type="password" name="cvv" id="cvv">
+    </p>
+    <input type="submit" value="Pay Now" class="paynow">
+  </section>
+
+  
+
+   <!-- creating the footer area -->
+   <footer>
+    <div>
+      <img src="./pvr.png" alt="logo" />
+      <!-- for social media icons -->
+      <div>
+        <a href="https://www.facebook.com/subhranshu20001"><img src="./facebook.png" alt="facebook icon" /></a>
+        <img src="./twitter.png" alt="twitter icon" />
+        <a href="https://instagram.com/subhranshu_mallick21"><img src="./instagram.png" alt="instagram icon" /></a>
+      </div>
+
+    </div>
+
+    <!-- for all different pages links -->
+    <div class="footer-links">
+      <div class="footer-links-content">
+        <ul>
+          <li><a href="#">Location</a></li>
+          <li><a href="./bbsr.jpg">Bhubaneswar</a></li>
+          <li><a href="./ctc.jpg">Cuttack</a></li>
+          <li><a href="./berhmpur.jpg">Berhmpur</a></li>
+          <li><a href="./rourkela.jpg">Rourkela</a></li>
+          <li><a href="./rayagada.jpg">Rayagada</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-content">
+        <ul>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./room.jpg ">About Me</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="./faq image.jpg">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-content">
+        <ul>
+          <li><a href="./Legals.html">Legals</a></li>
+          <li><a href="https://in.bookmyshow.com/terms-and-conditions">Privacy</a></li>
+          <li><a href="./disclamier.jpg">Disclaimer</a></li>
+          <li><a href="./Terms.html">Terms</a></li>
+          <li><a href="#">Company</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
